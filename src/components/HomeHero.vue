@@ -13,7 +13,7 @@
       dark:text-gray-200
     "
   >
-    <div class="lg:hidden flex justify-center">
+    <div class="lg:hidden flex justify-center mt-10">
       <img
         src="https://iokit.netlify.app/assets/images/illustration/Payment%20Processing.svg"
         class="h-full w-6/12"

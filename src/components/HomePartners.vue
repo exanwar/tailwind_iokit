@@ -11,12 +11,24 @@
       items-center
     "
   >
-    <div class="flex flex-row justify-between items-center space-x-2">
-      <div class="flex flex-1 h-0.5 w-full bg-gray-400"></div>
-      <div class="flex flex-3">
+    <div
+      class="
+        flex flex-row
+        lg:justify-between
+        justify-center
+        items-center
+        space-x-2
+      "
+    >
+      <div
+        class="lg:flex lg:flex-1 lg:h-0.5 lg:w-full lg:bg-gray-400 hidden"
+      ></div>
+      <div class="lg:flex lg:flex-3">
         <p
           class="
-            font-bold font-xs
+            font-bold
+            md:font-xs
+            font-lg
             text-gray-600
             font-pattaya
             tracking-wider
@@ -26,83 +38,46 @@
           Trusted by template creators across the world
         </p>
       </div>
-      <div class="flex flex-1 h-0.5 w-full bg-gray-400"></div>
+      <div
+        class="lg:flex lg:flex-1 lg:h-0.5 lg:w-full lg:bg-gray-400 hidden"
+      ></div>
     </div>
     <div class="">
-      <div class="flex flex-row justify-around items-center">
+      <div
+        class="
+          flex
+          md:flex-row
+          flex-col
+          md:justify-around
+          justify-center
+          items-center
+          space-y-3
+          md:space-y-0
+        "
+      >
         <img
           src="https://iokit.netlify.app/assets/images/logos/client_logo2.svg"
-          class="
-            lg:w-28
-            w-12
-            h-10
-            transform
-            hover:scale-125
-            transition
-            duration-700
-          "
+          class="w-28 h-10 transform hover:scale-125 transition duration-700"
         />
         <img
           src="https://iokit.netlify.app/assets/images/logos/client_logo4.svg"
-          class="
-            lg:w-28
-            md:w-20
-            sm:w-16
-            w-12
-            h-10
-            transform
-            hover:scale-125
-            transition
-            duration-700
-          "
+          class="w-28 h-10 transform hover:scale-125 transition duration-700"
         />
         <img
           src="https://iokit.netlify.app/assets/images/logos/client_logo3.svg"
-          class="
-            lg:w-28
-            w-12
-            h-10
-            transform
-            hover:scale-125
-            transition
-            duration-700
-          "
+          class="w-28 h-10 transform hover:scale-125 transition duration-700"
         />
         <img
           src="https://iokit.netlify.app/assets/images/logos/client_logo1.svg"
-          class="
-            lg:w-28
-            w-12
-            h-10
-            transform
-            hover:scale-125
-            transition
-            duration-700
-          "
+          class="w-28 h-10 transform hover:scale-125 transition duration-700"
         />
         <img
           src="https://iokit.netlify.app/assets/images/logos/client_logo5.svg"
-          class="
-            lg:w-28
-            w-12
-            h-10
-            transform
-            hover:scale-125
-            transition
-            duration-700
-          "
+          class="w-28 h-10 transform hover:scale-125 transition duration-700"
         />
         <img
           src="https://iokit.netlify.app/assets/images/logos/client_logo6.svg"
-          class="
-            lg:w-28
-            w-12
-            h-10
-            transform
-            hover:scale-125
-            transition
-            duration-700
-          "
+          class="w-28 h-10 transform hover:scale-125 transition duration-700"
         />
       </div>
     </div>

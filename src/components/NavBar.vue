@@ -228,22 +228,32 @@
     </div>
     <div
       v-show="mobileMenu"
-      class="md:flex md:flex-col bg-gray-200 pb-10 lg:hidden shadow-lg"
+      class="
+        md:flex md:flex-col
+        bg-gray-200
+        pb-10
+        lg:hidden
+        shadow-lg
+        dark:bg-gray-900
+        border-b
+        dark:border-gray-100
+        dark:text-gray-200
+      "
     >
       <div class="flex flex-col">
-        <a href="#" class="px-10 sm:px-20 py-3 hover:bg-gray-300 rounded"
+        <a href="#" class="px-10 sm:px-20 py-3 hover:bg-gray-700 rounded"
           >Demos</a
         >
-        <a href="#" class="px-10 sm:px-20 py-3 hover:bg-gray-300 rounded"
+        <a href="#" class="px-10 sm:px-20 py-3 hover:bg-gray-700 rounded"
           >Pages</a
         >
-        <a href="#" class="px-10 sm:px-20 py-3 hover:bg-gray-300 rounded"
+        <a href="#" class="px-10 sm:px-20 py-3 hover:bg-gray-700 rounded"
           >Account</a
         >
-        <a href="#" class="px-10 sm:px-20 py-3 hover:bg-gray-300 rounded"
+        <a href="#" class="px-10 sm:px-20 py-3 hover:bg-gray-700 rounded"
           >Blog</a
         >
-        <a href="#" class="px-10 sm:px-20 py-3 hover:bg-gray-300 rounded"
+        <a href="#" class="px-10 sm:px-20 py-3 hover:bg-gray-700 rounded"
           >Documentation</a
         >
       </div>
@@ -254,7 +264,7 @@
           w-3/4
           mx-auto
           bg-blue-700
-          dark:bg-gray-100 dark:bg-opacity-10
+          dark:bg-blue-700 dark:bg-opacity-10
         "
       ></div>
       <div
@@ -277,10 +287,11 @@
             font-semibold
             tracking-wider
             bg-blue-900
-            dark:bg-gray-200
-            hover:bg-blue-700
+            dark:bg-blue-500
+            dark:hover:bg-blue-900
+            hover:bg-blue-900
             text-gray-100
-            dark:text-gray-900
+            dark:text-gray-200
             rounded-lg
             transition
             duration-1000
@@ -299,9 +310,11 @@
             tracking-wider
             bg-gray-900
             dark:bg-gray-200
+            dark:hover:bg-gray-500
             hover:bg-gray-700
             text-gray-200
             dark:text-gray-900
+            dark:hover:text-gray-200
             rounded-lg
             transition
             duration-1000

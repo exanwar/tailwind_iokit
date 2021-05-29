@@ -224,14 +224,14 @@
               py-2.5
               text-gray-100
               font-bold
-              hover:bg-blue-200
+              hover:bg-blue-900
             "
           >
-            <span class="tracking-tight font-sm">Get Started</span>
+            <span class="tracking-tight font-sm">Get Started </span>
             <span
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-6"
+                class="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

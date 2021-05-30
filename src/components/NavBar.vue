@@ -8,7 +8,8 @@
           lg:max-w-5xl
           md:max-w-3xl
           sm:max-w-xl
-          max-w-md
+          xs:max-w-md
+          max-w-sm
           mx-auto
           flex
           justify-between

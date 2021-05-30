@@ -2,7 +2,8 @@
   <div
     class="
       flex flex-col
-      max-w-md
+      xs:max-w-md
+      max-w-sm
       sm:max-w-xl
       md:max-w-2xl
       lg:max-w-4xl

@@ -13,6 +13,7 @@
           flex
           justify-between
           items-center
+          md:px-5
         "
       >
         <div class="p-5">

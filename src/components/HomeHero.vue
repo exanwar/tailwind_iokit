@@ -6,20 +6,19 @@
       md:max-w-3xl
       mx-auto
       flex
-      lg:flex-row
+      md:flex-row
       flex-col
       justify-center
       items-center
-      dark:text-gray-200
     "
   >
-    <div class="lg:hidden flex justify-center mt-10">
+    <div class="md:hidden flex justify-center mt-10">
       <img
         src="https://iokit.netlify.app/assets/images/illustration/Payment%20Processing.svg"
         class="h-full w-6/12"
       />
     </div>
-    <div class="lg:flex-1 lg:pl-52 flex flex-col justify-center p-8">
+    <div class="md:flex-1 lg:pl-52 flex flex-col justify-center p-8">
       <h1
         class="
           text-3xl
@@ -88,7 +87,7 @@
         </button>
       </div>
     </div>
-    <div class="lg:flex lg:flex-1 lg:py-10 hidden">
+    <div class="md:flex md:flex-1 lg:py-10 hidden">
       <img
         src="https://iokit.netlify.app/assets/images/illustration/Payment%20Processing.svg"
         class="h-full w-full"

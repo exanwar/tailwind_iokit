@@ -1,83 +1,121 @@
 <template>
   <div
     class="
-      lg:max-w-7xl
-      md:max-w-4xl
+      flex flex-col
+      max-w-md
       sm:max-w-xl
+      md:max-w-2xl
+      lg:max-w-4xl
+      xl:max-w-5xl
+      2xl:max-w-6xl
       mx-auto
-      pb-28
-      space-y-5
-      justify-center
-      items-center
+      sm:py-4
+      space-y-3
+      lg:space-y-6
+      pb-8
+      md:pb-10
+      lg:pb-12
     "
   >
     <div
-      class="
-        flex flex-row
-        lg:justify-between
-        justify-center
-        items-center
-        space-x-2
-      "
+      class="flex flex-row justify-between font-pattaya items-center space-x-4"
     >
-      <div
-        class="lg:flex lg:flex-1 lg:h-0.5 lg:w-full lg:bg-gray-400 hidden"
-      ></div>
-      <div class="lg:flex lg:flex-3">
-        <p
-          class="
-            font-bold
-            md:font-xs
-            font-lg
-            text-gray-600
-            font-pattaya
-            tracking-wider
-            dark:text-gray-300
-          "
-        >
-          Trusted by template creators across the world
-        </p>
-      </div>
-      <div
-        class="lg:flex lg:flex-1 lg:h-0.5 lg:w-full lg:bg-gray-400 hidden"
-      ></div>
+      <div class="flex flex-1 h-0.5 w-full bg-gray-400"></div>
+      <p class="flex flex-3 text-gray-600 dark:text-gray-300">
+        Trusted by template creators across the world
+      </p>
+      <div class="flex flex-1 h-0.5 w-full bg-gray-400"></div>
     </div>
-    <div class="">
-      <div
-        class="
-          flex
-          md:flex-row
-          flex-col
-          md:justify-around
-          justify-center
-          items-center
-          space-y-3
-          md:space-y-0
-        "
-      >
+    <div class="flex flex-row justify-between items-center">
+      <div class="px-1 py-1 w-1/3 sm:w-1/4 md:w-1/5 lg:1/6">
         <img
           src="https://iokit.netlify.app/assets/images/logos/client_logo2.svg"
-          class="w-28 h-10 transform hover:scale-125 transition duration-700"
+          class="
+            block
+            h-auto
+            w-4/5
+            xl:w-9/12
+            transform
+            hover:scale-125
+            transition
+            duration-700
+          "
         />
+      </div>
+      <div class="px-1 py-1 w-1/3 sm:w-1/4 md:w-1/5 lg:1/6">
         <img
           src="https://iokit.netlify.app/assets/images/logos/client_logo4.svg"
-          class="w-28 h-10 transform hover:scale-125 transition duration-700"
+          class="
+            block
+            h-auto
+            w-4/5
+            xl:w-9/12
+            transform
+            hover:scale-125
+            transition
+            duration-700
+            space-y-4
+          "
         />
+      </div>
+      <div class="px-1 py-1 w-1/3 sm:w-1/4 md:w-1/5 lg:1/6">
         <img
           src="https://iokit.netlify.app/assets/images/logos/client_logo3.svg"
-          class="w-28 h-10 transform hover:scale-125 transition duration-700"
+          class="
+            block
+            h-auto
+            w-4/5
+            xl:w-9/12
+            transform
+            hover:scale-125
+            transition
+            duration-700
+          "
         />
+      </div>
+      <div class="px-1 py-1 w-1/3 sm:w-1/4 md:w-1/5 lg:1/6">
         <img
           src="https://iokit.netlify.app/assets/images/logos/client_logo1.svg"
-          class="w-28 h-10 transform hover:scale-125 transition duration-700"
+          class="
+            block
+            h-auto
+            w-4/5
+            xl:w-9/12
+            transform
+            hover:scale-125
+            transition
+            duration-700
+          "
         />
+      </div>
+      <div class="px-1 py-1 w-1/3 sm:w-1/4 md:w-1/5 lg:1/6">
         <img
           src="https://iokit.netlify.app/assets/images/logos/client_logo5.svg"
-          class="w-28 h-10 transform hover:scale-125 transition duration-700"
+          class="
+            block
+            h-auto
+            w-4/5
+            xl:w-9/12
+            transform
+            hover:scale-125
+            transition
+            duration-700
+          "
         />
+      </div>
+      <div class="px-1 py-1 w-1/3 sm:w-1/4 md:w-1/5 lg:1/6">
         <img
           src="https://iokit.netlify.app/assets/images/logos/client_logo6.svg"
-          class="w-28 h-10 transform hover:scale-125 transition duration-700"
+          class="
+            block
+            h-auto
+            w-4/5
+            xl:w-9/12
+            transform
+            hover:scale-125
+            transition
+            duration-700
+          "
         />
       </div>
     </div>

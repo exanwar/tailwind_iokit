@@ -18,7 +18,7 @@
     "
   >
     <div
-      class="flex flex-row justify-between font-pattaya items-center space-x-4"
+      class="flex flex-row justify-around font-pattaya items-center space-x-4"
     >
       <div class="flex flex-1 h-0.5 w-full bg-gray-400"></div>
       <p class="flex flex-3 text-gray-600 dark:text-gray-300">

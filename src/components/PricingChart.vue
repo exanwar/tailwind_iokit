@@ -501,7 +501,15 @@
     </table>
 
     <div class="mobile-table mx-4 md:mx-32 mt-16 md:hidden">
-      <div class="text-center border border-gray-400 text-base">
+      <div
+        class="
+          flex flex-col
+          justify-center
+          text-center
+          border border-gray-400
+          text-base
+        "
+      >
         <div class="bg-gray-300 px-4 py-4">
           <div class="uppercase tracking-wide font-bold text-gray-700">
             Hobby
@@ -585,7 +593,7 @@
           </ul>
         </div>
         <div class="odd:bg-gray-200 even:bg-white px-3 py-4">
-          <div class="">
+          <div class="flex justify-center">
             <a
               href="#"
               class="

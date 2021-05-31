@@ -1,7 +1,7 @@
 <template>
   <!-- Navigation Bar     -->
-  <div class="">
-    <div class="shadow-xl">
+  <div class="shadow-xl">
+    <div class="overflow-x-hidden">
       <nav
         class="
           xl:max-w-7xl
@@ -11,7 +11,7 @@
           xs:max-w-md
           max-w-sm
           mx-auto
-          flex
+          flex flex-wrap
           justify-between
           items-center
           md:px-5
@@ -213,116 +213,160 @@
           <button>
             <MenuIcon
               v-if="!mobileMenu"
-              class="h-6 w-6 outline-none dark:text-gray-200"
+              class="h-6 w-6 dark:text-gray-200"
               @click="switchMobileMenu"
             />
             <XIcon
               v-else
-              class="h6 w-6 outline-none dark:text-gray-200"
+              class="h6 w-6 dark:text-gray-200"
               @click="switchMobileMenu"
             />
           </button>
         </div>
       </nav>
-      <div
-        class="h-0.5 w-screen bg-blue-100 dark:bg-gray-100 dark:bg-opacity-10"
-      ></div>
+      <div class="h-0.5 w-screen dark:bg-gray-100 dark:bg-opacity-10"></div>
     </div>
-    <div
-      v-show="mobileMenu"
-      class="
-        md:flex md:flex-col
-        bg-gray-200
-        pb-10
-        lg:hidden
-        shadow-lg
-        dark:bg-gray-900
-        border-b
-        dark:border-gray-100
-        dark:text-gray-200
-      "
-    >
-      <div class="flex flex-col">
-        <a href="#" class="px-10 sm:px-20 py-3 hover:bg-gray-700 rounded"
-          >Demos</a
-        >
-        <a href="#" class="px-10 sm:px-20 py-3 hover:bg-gray-700 rounded"
-          >Pages</a
-        >
-        <a href="#" class="px-10 sm:px-20 py-3 hover:bg-gray-700 rounded"
-          >Account</a
-        >
-        <a href="#" class="px-10 sm:px-20 py-3 hover:bg-gray-700 rounded"
-          >Blog</a
-        >
-        <a href="#" class="px-10 sm:px-20 py-3 hover:bg-gray-700 rounded"
-          >Documentation</a
-        >
-      </div>
+    <div class="overflow-hidden">
       <div
+        v-show="mobileMenu"
         class="
-          my-7
-          h-0.5
-          w-3/4
-          mx-auto
-          bg-blue-700
-          dark:bg-blue-700 dark:bg-opacity-10
-        "
-      ></div>
-      <div
-        class="
-          flex flex-col
-          md:flex-row
-          items-center
-          justify-center
-          space-y-4
-          md:space-x-4 md:space-y-0
+          md:flex md:flex-col
+          bg-gray-200
+          pb-10
+          lg:hidden
+          shadow-2xl
+          rounded-b-3xl
+          dark:bg-gray-900
+          dark:text-gray-200
         "
       >
-        <a
-          href="#"
+        <div class="flex flex-col">
+          <a
+            href="#"
+            class="
+              px-10
+              sm:px-20
+              py-3
+              hover:bg-gray-400
+              dark:hover:bg-gray-700
+              rounded
+            "
+            >Demos</a
+          >
+          <a
+            href="#"
+            class="
+              px-10
+              sm:px-20
+              py-3
+              hover:bg-gray-400
+              dark:hover:bg-gray-700
+              rounded
+            "
+            >Pages</a
+          >
+          <a
+            href="#"
+            class="
+              px-10
+              sm:px-20
+              py-3
+              hover:bg-gray-400
+              dark:hover:bg-gray-700
+              rounded
+            "
+            >Account</a
+          >
+          <a
+            href="#"
+            class="
+              px-10
+              sm:px-20
+              py-3
+              hover:bg-gray-400
+              dark:hover:bg-gray-700
+              rounded
+            "
+            >Blog</a
+          >
+          <a
+            href="#"
+            class="
+              px-10
+              sm:px-20
+              py-3
+              hover:bg-gray-400
+              dark:hover:bg-gray-700
+              rounded
+            "
+            >Documentation</a
+          >
+        </div>
+        <div
           class="
-            font-nunito
-            text-xl
-            px-24
-            py-4
-            font-semibold
-            tracking-wider
-            bg-blue-900
-            dark:bg-blue-500
-            dark:hover:bg-blue-900
-            hover:bg-blue-900
-            text-gray-100
-            dark:text-gray-200
-            rounded-lg
-            transition
-            duration-1000
+            my-7
+            h-0.5
+            w-3/4
+            mx-auto
+            bg-blue-700
+            dark:bg-blue-700 dark:bg-opacity-10
           "
-          >Login</a
+        ></div>
+        <div
+          class="
+            flex flex-col
+            md:flex-row
+            items-center
+            justify-center
+            space-y-4
+            md:space-x-4 md:space-y-0
+          "
         >
+          <a
+            href="#"
+            class="
+              font-nunito
+              text-xl
+              px-24
+              py-4
+              font-semibold
+              tracking-wider
+              bg-blue-900
+              dark:bg-blue-500
+              dark:hover:bg-blue-900
+              hover:bg-blue-900
+              text-gray-100
+              dark:text-gray-200
+              rounded-lg
+              transition
+              duration-1000
+            "
+            >Login</a
+          >
 
-        <a
-          href="#"
-          class="
-            font-nunito
-            text-xl
-            px-24
-            py-4
-            font-semibold
-            tracking-wider
-            bg-gray-900
-            dark:bg-gray-200
-            dark:hover:bg-gray-500
-            hover:bg-gray-700
-            text-gray-200
-            dark:text-gray-900
-            dark:hover:text-gray-200
-            rounded-lg
-            transition
-            duration-1000
-          "
-          >Signup</a
-        >
+          <a
+            href="#"
+            class="
+              font-nunito
+              text-xl
+              px-24
+              py-4
+              font-semibold
+              tracking-wider
+              bg-gray-900
+              dark:bg-gray-200
+              dark:hover:bg-gray-500
+              hover:bg-gray-700
+              text-gray-200
+              dark:text-gray-900
+              dark:hover:text-gray-200
+              rounded-lg
+              transition
+              duration-1000
+            "
+            >Signup</a
+          >
+        </div>
       </div>
     </div>
   </div>

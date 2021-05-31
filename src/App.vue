@@ -1,11 +1,16 @@
 <template>
   <div class="bg-gray-200 dark:bg-gray-900">
-    <nav-bar></nav-bar>
-    <home-hero></home-hero>
-    <home-partners></home-partners>
-
-    <div class="mx-w-md mx-auto mt-10 pb-12">
-      <pricing-chart></pricing-chart>
+    <div class="z-50">
+      <nav-bar></nav-bar>
+    </div>
+    <div class="">
+      <home-hero></home-hero>
+    </div>
+    <div class="pb-80">
+      <home-partners></home-partners>
+    </div>
+    <div class="py-20 bg-gray-200">
+      <pricing-chart class="-mt-96"></pricing-chart>
     </div>
   </div>
 </template>

@@ -1,588 +1,507 @@
 <template>
-  <div>
-    <table class="hidden lg:block w-full text-base">
+  <div
+    class="
+      md:bg-white
+      md:rounded-3xl
+      lg:max-w-4xl
+      xl:max-w-5xl
+      md:max-w-3xl
+      sm:max-w-md
+      xs:max-w-sm
+      max-w-xs
+      mx-auto
+      px-20
+    "
+  >
+    <table class="w-full hidden md:block">
       <thead>
         <tr>
-          <th
-            class="
-              w-1/5
-              bg-gray-100
-              text-left
-              font-normal
-              align-top
-              px-4
-              py-6
-              sticky
-              top-0
-            "
-          >
-            <div class="font-semibold">
-              <span
-                class="text-gray-500 mr-3"
-                :class="{ 'text-gray-700': !isMonthly }"
-                >Annually</span
-              >
-              <toggle-button
-                v-model="isMonthly"
-                switch-color="#4199E1"
-                :color="{ checked: '#CBD5E0', unchecked: '#CBD5E0' }"
+          <th class="w-1/4 md:w-3/12 px-4 py-6">
+            <div class="">
+              <h1 class="text-gray-800 text-right text-lg">Save 20%</h1>
+              <div class="text-right">
+                <img
+                  src="https://assets.website-files.com/5e7adffc6e755a6bb3a7d516/5e7adffc6e755a55b3a7d56d_arrow.svg"
+                  class="inline-block"
+                />
+              </div>
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="
+                  w-full
+                  mt-4
+                  py-3
+                  px-2
+                  shadow
+                  rounded-lg
+                  focus:border-blue-300
+                  border
+                  outline-none
+                  text-lg
+                "
               />
-              <span
-                class="text-gray-500 ml-3"
-                :class="{ 'text-gray-700': isMonthly }"
-                >Monthly</span
-              >
-            </div>
-            <div class="text-blue-600 text-sm mt-4">
-              Save up to 30% by paying annually.
+              <p class="mt-3 text-gray-500 font-semibold text-sm tracking-wide">
+                *Join and get 20% off coupon
+              </p>
             </div>
           </th>
-          <th
-            class="
-              w-1/5
-              bg-gray-200
-              text-center
-              border border-gray-400
-              font-normal
-              px-4
-              py-6
-              sticky
-              top-0
-            "
-          >
-            <div class="uppercase tracking-wide font-bold text-gray-700">
-              Hobby
-            </div>
-            <div class="mt-3">
-              <span class="text-lg">$</span>
-              <span class="font-bold text-4xl ml-1">
-                {{
-                  !isMonthly
-                    ? plans.hobby.price.perYear
-                    : plans.hobby.price.perMonth
-                }}
-              </span>
-              <span class="ml-2 text-sm">/ month</span>
-            </div>
-            <div class="mt-3">
-              <a
-                href="#"
+          <th class="px-8 py-16 w-1/4 md:w-3/12">
+            <div class="flex flex-col">
+              <h1
                 class="
-                  bg-blue-500
-                  hover:bg-blue-700
-                  text-white
-                  inline-block
-                  rounded
-                  w-4/5
-                  px-4
-                  py-3
+                  font-pattaya font-extrabold
+                  text-2xl
+                  tracking-wide
+                  text-left text-gray-900
                 "
-                >Sign Up</a
               >
+                Free
+              </h1>
+              <h1
+                class="mt-1 font-nunito font-semibold text-left text-gray-700"
+              >
+                No credit card required
+              </h1>
+              <div class="mt-3 flex">
+                <button
+                  class="
+                    font-pattaya
+                    text-xl
+                    md:text-lg
+                    bg-blue-700
+                    opacity-80
+                    hover:opacity-60
+                    px-8
+                    md:px-3
+                    py-2.5
+                    rounded-lg
+                    text-gray-100
+                    transition
+                    duration-700
+                  "
+                >
+                  Get Started
+                </button>
+              </div>
             </div>
           </th>
-          <th
-            class="
-              w-1/5
-              bg-gray-200
-              text-center
-              border border-gray-400
-              font-normal
-              px-4
-              py-6
-              sticky
-              top-0
-            "
-          >
-            <div class="uppercase tracking-wide font-bold text-gray-700">
-              Growth
-            </div>
-            <div class="mt-3">
-              <span class="text-lg">$</span>
-              <span class="font-bold text-4xl ml-1">
-                {{
-                  !isMonthly
-                    ? plans.growth.price.perYear
-                    : plans.growth.price.perMonth
-                }}
-              </span>
-              <span class="ml-2 text-sm">/ month</span>
-            </div>
-            <div class="mt-3">
-              <a
-                href="#"
+          <th class="px-8 py-6 w-1/4 md:w-3/12">
+            <div class="flex flex-col">
+              <h1
                 class="
-                  bg-blue-500
-                  hover:bg-blue-700
-                  text-white
-                  inline-block
-                  rounded
-                  w-4/5
-                  px-4
-                  py-3
+                  font-pattaya font-extrabold
+                  text-2xl
+                  tracking-wide
+                  text-left text-gray-900
                 "
-                >Sign Up</a
               >
+                $9/mo
+              </h1>
+              <h1
+                class="mt-1 font-nunito font-semibold text-left text-gray-700"
+              >
+                No credit card required
+              </h1>
+              <div class="mt-3 flex">
+                <button
+                  class="
+                    font-pattaya
+                    text-xl
+                    md:text-lg
+                    bg-blue-700
+                    opacity-80
+                    hover:opacity-60
+                    px-8
+                    md:px-3
+                    py-2.5
+                    rounded-lg
+                    text-gray-100
+                    transition
+                    duration-700
+                  "
+                >
+                  Get Started
+                </button>
+              </div>
             </div>
           </th>
-          <th
-            class="
-              w-1/5
-              bg-gray-200
-              text-center
-              border border-gray-400
-              font-normal
-              px-4
-              py-6
-              sticky
-              top-0
-            "
-          >
-            <div class="uppercase tracking-wide font-bold text-gray-700">
-              Business
-            </div>
-            <div class="mt-3">
-              <span class="text-lg">$</span>
-              <span class="font-bold text-4xl ml-1">
-                {{
-                  !isMonthly
-                    ? plans.business.price.perYear
-                    : plans.business.price.perMonth
-                }}
-              </span>
-              <span class="ml-2 text-sm">/ month</span>
-            </div>
-            <div class="mt-3">
-              <a
-                href="#"
+          <th class="px-8 py-6 w-1/4 md:w-3/12">
+            <div class="flex flex-col">
+              <h1
                 class="
-                  bg-blue-500
-                  hover:bg-blue-700
-                  text-white
-                  inline-block
-                  rounded
-                  w-4/5
-                  px-4
-                  py-3
+                  font-pattaya font-extrabold
+                  text-2xl
+                  tracking-wide
+                  text-left text-gray-900
                 "
-                >Sign Up</a
               >
-            </div>
-          </th>
-          <th
-            class="
-              w-1/5
-              bg-gray-200
-              text-center
-              border border-gray-400
-              font-normal
-              px-4
-              py-6
-              sticky
-              top-0
-            "
-          >
-            <div class="uppercase tracking-wide font-bold text-gray-700">
-              Enterprise
-            </div>
-            <div class="mt-3">
-              <span class="text-lg">$</span>
-              <span class="font-bold text-4xl ml-1">
-                {{
-                  !isMonthly
-                    ? plans.enterprise.price.perYear
-                    : plans.enterprise.price.perMonth
-                }}
-              </span>
-              <span class="ml-2 text-sm">/ month</span>
-            </div>
-            <div class="mt-3">
-              <a
-                href="#"
-                class="
-                  bg-blue-500
-                  hover:bg-blue-700
-                  text-white
-                  inline-block
-                  rounded
-                  w-4/5
-                  px-4
-                  py-3
-                "
-                >Sign Up</a
+                $19/mo
+              </h1>
+              <h1
+                class="mt-1 font-nunito font-semibold text-left text-gray-700"
               >
+                No credit card required
+              </h1>
+              <div class="mt-3 flex">
+                <button
+                  class="
+                    font-pattaya
+                    text-xl
+                    md:text-lg
+                    bg-blue-700
+                    opacity-80
+                    hover:opacity-60
+                    px-8
+                    md:px-3
+                    py-2.5
+                    rounded-lg
+                    text-gray-100
+                    transition
+                    duration-700
+                  "
+                >
+                  Get Started
+                </button>
+              </div>
             </div>
           </th>
         </tr>
       </thead>
       <tbody>
-        <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">
-            Shipping Discount
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">$19</td>
-          <td class="border border-gray-400 text-center px-4 py-6">$29</td>
-          <td class="border border-gray-400 text-center px-4 py-6">$39</td>
-          <td class="border border-gray-400 text-center px-4 py-6">$49</td>
-        </tr>
-        <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">
-            Print Shipping Labels
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">3</td>
-          <td class="border border-gray-400 text-center px-4 py-6">4</td>
-          <td class="border border-gray-400 text-center px-4 py-6">5</td>
-          <td class="border border-gray-400 text-center px-4 py-6">6</td>
-        </tr>
-        <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">
-            Same Day Delivery
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">7</td>
-          <td class="border border-gray-400 text-center px-4 py-6">8</td>
-          <td class="border border-gray-400 text-center px-4 py-6">9</td>
-          <td class="border border-gray-400 text-center px-4 py-6">10</td>
-        </tr>
-        <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">
-            Contributors
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">11</td>
-          <td class="border border-gray-400 text-center px-4 py-6">12</td>
-          <td class="border border-gray-400 text-center px-4 py-6">13</td>
-          <td class="border border-gray-400 text-center px-4 py-6">14</td>
-        </tr>
-        <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">API Calls</td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <div class="text-lg font-semibold">1,000 calls</div>
-            <div class="text-xs">/ month</div>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <div class="text-lg font-semibold">5,000 calls</div>
-            <div class="text-xs">/ month</div>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <div class="text-lg font-semibold">10,000 calls</div>
-            <div class="text-xs">/ month</div>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <div class="text-lg font-semibold">50,000 calls</div>
-            <div class="text-xs">/ month</div>
-          </td>
-        </tr>
-        <tr class="bg-gray-200 border border-gray-400">
+        <tr>
           <td
-            colspan="5"
-            class="uppercase tracking-wide font-semibold px-4 py-6"
+            class="
+              px-5
+              py-6
+              border-r-2 border-b-2
+              boder-gray-400
+              font-bold
+              md:font-semibold
+              text-gray-800 text-xl
+            "
           >
-            Shipping
+            Website
           </td>
-        </tr>
-        <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">
-            Free Custom Domain
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg
-              class="w-6 h-6 inline-block text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z"
-              />
-            </svg>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg
-              class="w-6 h-6 inline-block text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z"
-              />
-            </svg>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg
-              class="w-6 h-6 inline-block text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z"
-              />
-            </svg>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg
-              class="w-6 h-6 inline-block text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z"
-              />
-            </svg>
-          </td>
-        </tr>
-        <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">
-            SSL Security
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg
-              class="w-6 h-6 inline-block text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z"
-              />
-            </svg>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg
-              class="w-6 h-6 inline-block text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z"
-              />
-            </svg>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg
-              class="w-6 h-6 inline-block text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z"
-              />
-            </svg>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg
-              class="w-6 h-6 inline-block text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z"
-              />
-            </svg>
-          </td>
-        </tr>
-        <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">
-            Unlimited Bandwidth and Storage
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6"></td>
-          <td class="border border-gray-400 text-center px-4 py-6"></td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg
-              class="w-6 h-6 inline-block text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z"
-              />
-            </svg>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg
-              class="w-6 h-6 inline-block text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z"
-              />
-            </svg>
-          </td>
-        </tr>
-        <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">
-            SEO Features for Site Visibility
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6"></td>
-          <td class="border border-gray-400 text-center px-4 py-6"></td>
-          <td class="border border-gray-400 text-center px-4 py-6"></td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg
-              class="w-6 h-6 inline-block text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z"
-              />
-            </svg>
-          </td>
-        </tr>
-        <tr class="bg-gray-200 border border-gray-400">
           <td
-            colspan="5"
-            class="uppercase tracking-wide font-semibold px-4 py-6"
+            class="
+              px-4
+              py-6
+              font-normal
+              text-gray-800 text-lg text-center
+              border-2 border-t-0
+            "
           >
-            Marketing
+            01
+          </td>
+          <td
+            class="
+              px-4
+              py-6
+              font-normal
+              text-gray-800 text-lg text-center
+              border-2 border-t-0
+            "
+          >
+            03
+          </td>
+          <td
+            class="
+              px-4
+              py-6
+              font-normal
+              text-gray-800 text-lg text-center
+              border-b-2 border-l-2
+            "
+          >
+            10
           </td>
         </tr>
-        <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">
-            Shipping Discount
+        <tr>
+          <td
+            class="
+              px-5
+              py-6
+              border-r-2 border-b-2
+              boder-gray-400
+              font-bold
+              text-gray-800 text-xl
+            "
+          >
+            Storages
           </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg
-              class="w-6 h-6 inline-block text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z"
-              />
-            </svg>
+          <td
+            class="
+              px-4
+              py-6
+              font-normal
+              text-gray-800 text-lg text-center
+              border-2 border-t-0
+            "
+          >
+            5GB
           </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg
-              class="w-6 h-6 inline-block text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z"
-              />
-            </svg>
+          <td
+            class="
+              px-4
+              py-6
+              font-normal
+              text-gray-800 text-lg text-center
+              border-2 border-t-0
+            "
+          >
+            10GB
           </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg
-              class="w-6 h-6 inline-block text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z"
-              />
-            </svg>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg
-              class="w-6 h-6 inline-block text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z"
-              />
-            </svg>
+          <td
+            class="
+              px-4
+              py-6
+              font-normal
+              text-gray-800 text-lg text-center
+              border-b-2 border-l-2
+            "
+          >
+            50GB
           </td>
         </tr>
-        <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">
-            Print Shipping Labels
+        <tr>
+          <td
+            class="
+              px-5
+              py-6
+              border-r-2 border-b-2
+              boder-gray-400
+              font-bold
+              text-gray-800 text-xl
+            "
+          >
+            Email Accounts
           </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg
-              class="w-6 h-6 inline-block text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z"
-              />
-            </svg>
+          <td
+            class="
+              px-4
+              py-6
+              font-normal
+              text-gray-800 text-lg text-center
+              border-2 border-t-0
+            "
+          >
+            10
           </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg
-              class="w-6 h-6 inline-block text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z"
-              />
-            </svg>
+          <td
+            class="
+              px-4
+              py-6
+              font-normal
+              text-gray-800 text-lg text-center
+              border-2 border-t-0
+            "
+          >
+            25
           </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg
-              class="w-6 h-6 inline-block text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z"
-              />
-            </svg>
-          </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg
-              class="w-6 h-6 inline-block text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z"
-              />
-            </svg>
+          <td
+            class="
+              px-4
+              py-6
+              font-normal
+              text-gray-800 text-lg text-center
+              border-b-2 border-l-2
+            "
+          >
+            50
           </td>
         </tr>
-        <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">
-            Same Day Delivery
+        <tr>
+          <td
+            class="
+              px-5
+              py-6
+              border-r-2 border-b-2
+              boder-gray-400
+              font-bold
+              text-gray-800 text-xl
+            "
+          >
+            Premium Themes
           </td>
-          <td class="border border-gray-400 text-center px-4 py-6"></td>
-          <td class="border border-gray-400 text-center px-4 py-6"></td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg
-              class="w-6 h-6 inline-block text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z"
-              />
-            </svg>
+          <td
+            class="px-4 py-6 border-2 border-t-0 boder-gray-400 text-center"
+          ></td>
+          <td class="px-4 py-6 border-2 border-t-0 boder-gray-400 text-center">
+            <CheckCircleIcon
+              class="h-8 w-8 inline-block text-blue-800 opacity-80"
+            />
           </td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg
-              class="w-6 h-6 inline-block text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z"
-              />
-            </svg>
+          <td
+            class="px-4 py-6 border-b-2 border-l-2 boder-gray-400 text-center"
+          >
+            <CheckCircleIcon
+              class="h-8 w-8 inline-block text-blue-800 opacity-80"
+            />
           </td>
         </tr>
-        <tr class="odd:bg-white even:bg-gray-100">
-          <td class="border border-gray-400 text-left px-4 py-6">
-            Contributors
+        <tr>
+          <td
+            class="
+              px-5
+              py-6
+              border-r-2 border-b-2
+              boder-gray-400
+              font-bold
+              text-gray-800 text-xl
+            "
+          >
+            Premium Themes
           </td>
-          <td class="border border-gray-400 text-center px-4 py-6"></td>
-          <td class="border border-gray-400 text-center px-4 py-6"></td>
-          <td class="border border-gray-400 text-center px-4 py-6"></td>
-          <td class="border border-gray-400 text-center px-4 py-6">
-            <svg
-              class="w-6 h-6 inline-block text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39 1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08 3.78-5a1 1 0 1 1 1.6 1.22z"
-              />
-            </svg>
+          <td
+            class="px-4 py-6 border-2 border-t-0 boder-gray-400 text-center"
+          ></td>
+          <td class="px-4 py-6 border-2 border-t-0 boder-gray-400 text-center">
+            <CheckCircleIcon
+              class="h-8 w-8 inline-block text-blue-800 opacity-80"
+            />
+          </td>
+          <td
+            class="px-4 py-6 border-b-2 border-l-2 boder-gray-400 text-center"
+          >
+            <CheckCircleIcon
+              class="h-8 w-8 inline-block text-blue-800 opacity-80"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td
+            class="
+              px-5
+              py-6
+              border-r-2 border-b-2
+              boder-gray-400
+              font-bold
+              text-gray-800 text-xl
+            "
+          >
+            Premium Themes
+          </td>
+          <td
+            class="px-4 py-6 border-2 border-t-0 boder-gray-400 text-center"
+          ></td>
+          <td class="px-4 py-6 border-2 border-t-0 boder-gray-400 text-center">
+            <CheckCircleIcon
+              class="h-8 w-8 inline-block text-blue-800 opacity-80"
+            />
+          </td>
+          <td
+            class="px-4 py-6 border-b-2 border-l-2 boder-gray-400 text-center"
+          >
+            <CheckCircleIcon
+              class="h-8 w-8 inline-block text-blue-800 opacity-80"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td
+            class="
+              px-5
+              py-6
+              border-r-2 border-b-2
+              boder-gray-400
+              font-bold
+              text-gray-800 text-xl
+            "
+          >
+            Advanced Forms
+          </td>
+          <td
+            class="px-4 py-6 border-2 border-t-0 boder-gray-400 text-center"
+          ></td>
+          <td
+            class="px-4 py-6 border-2 border-t-0 boder-gray-400 text-center"
+          ></td>
+          <td
+            class="px-4 py-6 border-b-2 border-l-2 boder-gray-400 text-center"
+          >
+            <CheckCircleIcon
+              class="h-8 w-8 inline-block text-blue-800 opacity-80"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td
+            class="
+              px-5
+              py-6
+              border-r-2 border-b-2
+              boder-gray-400
+              font-bold
+              text-gray-800 text-xl
+            "
+          >
+            Premium Icons
+          </td>
+          <td class="px-4 py-6 border-2 border-t-0 boder-gray-400 text-center">
+            <CheckCircleIcon
+              class="h-8 w-8 inline-block text-blue-800 opacity-80"
+            />
+          </td>
+          <td
+            class="px-4 py-6 border-2 border-t-0 boder-gray-400 text-center"
+          ></td>
+          <td
+            class="px-4 py-6 border-l-2 border-b-2 boder-gray-400 text-center"
+          >
+            <CheckCircleIcon
+              class="h-8 w-8 inline-block text-blue-800 opacity-80"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td
+            class="
+              px-5
+              py-6
+              border-r-2
+              boder-gray-400
+              font-bold
+              text-gray-800 text-xl
+            "
+          >
+            Customer Support
+          </td>
+          <td
+            class="
+              px-4
+              py-6
+              border-2 border-t-0 border-b-0
+              boder-gray-400
+              font-normal
+              text-gray-800 text-lg text-center
+            "
+          >
+            Limited
+          </td>
+          <td
+            class="
+              px-4
+              py-6
+              border-2 border-t-0 border-b-0
+              boder-gray-400
+              text-center
+            "
+          >
+            <CheckCircleIcon
+              class="h-8 w-8 inline-block text-blue-800 opacity-80"
+            />
+          </td>
+          <td class="px-4 py-6 border-l-2 boder-gray-400 font-bold text-center">
+            <CheckCircleIcon
+              class="h-8 w-8 inline-block text-blue-800 opacity-80"
+            />
           </td>
         </tr>
       </tbody>
     </table>
 
-    <div class="mobile-table mx-4 md:mx-32 mt-16 lg:hidden">
+    <div class="mobile-table mx-4 md:mx-32 mt-16 md:hidden">
       <div class="text-center border border-gray-400 text-base">
         <div class="bg-gray-300 px-4 py-4">
           <div class="uppercase tracking-wide font-bold text-gray-700">
@@ -590,13 +509,7 @@
           </div>
           <div class="mt-3">
             <span class="text-lg">$</span>
-            <span class="font-bold text-4xl ml-1">
-              {{
-                !isMonthly
-                  ? plans.hobby.price.perYear
-                  : plans.hobby.price.perMonth
-              }}
-            </span>
+            <span class="font-bold text-4xl ml-1"> $19 </span>
             <span class="ml-2 text-sm">/ month</span>
           </div>
         </div>
@@ -696,37 +609,15 @@
 </template>
 
 <script>
+import { CheckCircleIcon } from "@heroicons/vue/solid";
 export default {
-  data() {
-    return {
-      isMonthly: false,
-      plans: {
-        hobby: {
-          price: {
-            perYear: 15,
-            perMonth: 20,
-          },
-        },
-        growth: {
-          price: {
-            perYear: 25,
-            perMonth: 30,
-          },
-        },
-        business: {
-          price: {
-            perYear: 50,
-            perMonth: 60,
-          },
-        },
-        enterprise: {
-          price: {
-            perYear: 90,
-            perMonth: 120,
-          },
-        },
-      },
-    };
+  setup() {
+    return {};
+  },
+  components: {
+    CheckCircleIcon,
   },
 };
 </script>
+
+<style lang="scss" scoped></style>

@@ -11,7 +11,11 @@ module.exports = {
       "2xl": "1536px",
     },
     extend: {
-      colors: {},
+      colors: {
+        table: {
+          "light-bg": "#687DED",
+        },
+      },
       fontFamily: {
         pattaya: ["Pattaya", "sans-serif"],
         nunito: ["Nunito", "sans-serif"],
@@ -19,7 +23,7 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    backgroundColor: ["responsive", "dark", "hover", "focus", "even", "odd"],
   },
   plugins: [],
 };

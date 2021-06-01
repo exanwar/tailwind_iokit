@@ -1,7 +1,15 @@
 <template>
-  <!-- Navigation Bar     -->
-  <div class="shadow-xl">
-    <div class="overflow-x-hidden">
+  <div class="pb-20">
+    <header
+      class="
+        border-t-4 border-blue-700
+        w-full
+        bg-gray-200
+        dark:bg-gray-900
+        absolute
+        shadow-lg
+      "
+    >
       <nav
         class="
           xl:max-w-7xl
@@ -67,8 +75,7 @@
             hidden
           "
         >
-          <a
-            href="#"
+          <div
             class="
               px-3
               py-2
@@ -76,10 +83,10 @@
               dark:hover:text-gray-400
               tracking-wide
             "
-            >Demos</a
           >
-          <a
-            href="#"
+            <a href="#"><mega-menu></mega-menu></a>
+          </div>
+          <div
             class="
               px-3
               py-2
@@ -87,10 +94,10 @@
               dark:hover:text-gray-400
               tracking-wide
             "
-            >Pages</a
           >
-          <a
-            href="#"
+            <a href="#">Pages</a>
+          </div>
+          <div
             class="
               px-3
               py-2
@@ -98,10 +105,10 @@
               dark:hover:text-gray-400
               tracking-wide
             "
-            >Account</a
           >
-          <a
-            href="#"
+            <a href="#">Account</a>
+          </div>
+          <div
             class="
               px-3
               py-2
@@ -109,10 +116,10 @@
               dark:hover:text-gray-400
               tracking-wide
             "
-            >Blog</a
           >
-          <a
-            href="#"
+            <a href="#">Blog</a>
+          </div>
+          <div
             class="
               px-3
               py-2
@@ -120,8 +127,9 @@
               dark:hover:text-gray-400
               tracking-wide
             "
-            >Documentation</a
           >
+            <a href="#"><dropdown-menu></dropdown-menu></a>
+          </div>
         </div>
         <div class="lg:flex hidden space-x-1 items-center">
           <a
@@ -224,156 +232,157 @@
           </button>
         </div>
       </nav>
-      <div class="h-0.5 w-screen dark:bg-gray-100 dark:bg-opacity-10"></div>
-    </div>
-    <div class="overflow-hidden">
-      <div
-        v-show="mobileMenu"
-        class="
-          md:flex md:flex-col
-          bg-gray-200
-          pb-10
-          lg:hidden
-          shadow-2xl
-          rounded-b-3xl
-          dark:bg-gray-900
-          dark:text-gray-200
-        "
-      >
-        <div class="flex flex-col">
-          <a
-            href="#"
-            class="
-              px-10
-              sm:px-20
-              py-3
-              hover:bg-gray-400
-              dark:hover:bg-gray-700
-              rounded
-            "
-            >Demos</a
-          >
-          <a
-            href="#"
-            class="
-              px-10
-              sm:px-20
-              py-3
-              hover:bg-gray-400
-              dark:hover:bg-gray-700
-              rounded
-            "
-            >Pages</a
-          >
-          <a
-            href="#"
-            class="
-              px-10
-              sm:px-20
-              py-3
-              hover:bg-gray-400
-              dark:hover:bg-gray-700
-              rounded
-            "
-            >Account</a
-          >
-          <a
-            href="#"
-            class="
-              px-10
-              sm:px-20
-              py-3
-              hover:bg-gray-400
-              dark:hover:bg-gray-700
-              rounded
-            "
-            >Blog</a
-          >
-          <a
-            href="#"
-            class="
-              px-10
-              sm:px-20
-              py-3
-              hover:bg-gray-400
-              dark:hover:bg-gray-700
-              rounded
-            "
-            >Documentation</a
-          >
-        </div>
+      <div class="w-full relative overflow-hidden">
         <div
+          v-show="mobileMenu"
           class="
-            my-7
-            h-0.5
-            w-3/4
-            mx-auto
-            bg-blue-700
-            dark:bg-blue-700 dark:bg-opacity-10
-          "
-        ></div>
-        <div
-          class="
-            flex flex-col
-            md:flex-row
-            items-center
-            justify-center
-            space-y-4
-            md:space-x-4 md:space-y-0
+            md:flex md:flex-col
+            bg-gray-200
+            pb-10
+            lg:hidden
+            shadow-2xl
+            rounded-b-3xl
+            dark:bg-gray-900
+            dark:text-gray-200
           "
         >
-          <a
-            href="#"
+          <div class="flex flex-col">
+            <a
+              href="#"
+              class="
+                px-10
+                sm:px-20
+                py-3
+                hover:bg-gray-400
+                dark:hover:bg-gray-700
+                rounded
+              "
+              >Demos</a
+            >
+            <a
+              href="#"
+              class="
+                px-10
+                sm:px-20
+                py-3
+                hover:bg-gray-400
+                dark:hover:bg-gray-700
+                rounded
+              "
+              >Pages</a
+            >
+            <a
+              href="#"
+              class="
+                px-10
+                sm:px-20
+                py-3
+                hover:bg-gray-400
+                dark:hover:bg-gray-700
+                rounded
+              "
+              >Account</a
+            >
+            <a
+              href="#"
+              class="
+                px-10
+                sm:px-20
+                py-3
+                hover:bg-gray-400
+                dark:hover:bg-gray-700
+                rounded
+              "
+              >Blog</a
+            >
+            <a
+              href="#"
+              class="
+                px-10
+                sm:px-20
+                py-3
+                hover:bg-gray-400
+                dark:hover:bg-gray-700
+                rounded
+              "
+              >Documentation</a
+            >
+          </div>
+          <div
             class="
-              font-nunito
-              text-xl
-              px-24
-              py-4
-              font-semibold
-              tracking-wider
-              bg-blue-900
-              dark:bg-blue-500
-              dark:hover:bg-blue-900
-              hover:bg-blue-900
-              text-gray-100
-              dark:text-gray-200
-              rounded-lg
-              transition
-              duration-1000
+              my-7
+              h-0.5
+              w-3/4
+              mx-auto
+              bg-blue-700
+              dark:bg-blue-700 dark:bg-opacity-10
             "
-            >Login</a
+          ></div>
+          <div
+            class="
+              flex flex-col
+              md:flex-row
+              items-center
+              justify-center
+              space-y-4
+              md:space-x-4 md:space-y-0
+            "
           >
+            <a
+              href="#"
+              class="
+                font-nunito
+                text-xl
+                px-24
+                py-4
+                font-semibold
+                tracking-wider
+                bg-blue-900
+                dark:bg-blue-500
+                dark:hover:bg-blue-900
+                hover:bg-blue-900
+                text-gray-100
+                dark:text-gray-200
+                rounded-lg
+                transition
+                duration-1000
+              "
+              >Login</a
+            >
 
-          <a
-            href="#"
-            class="
-              font-nunito
-              text-xl
-              px-24
-              py-4
-              font-semibold
-              tracking-wider
-              bg-gray-900
-              dark:bg-gray-200
-              dark:hover:bg-gray-500
-              hover:bg-gray-700
-              text-gray-200
-              dark:text-gray-900
-              dark:hover:text-gray-200
-              rounded-lg
-              transition
-              duration-1000
-            "
-            >Signup</a
-          >
+            <a
+              href="#"
+              class="
+                font-nunito
+                text-xl
+                px-24
+                py-4
+                font-semibold
+                tracking-wider
+                bg-gray-900
+                dark:bg-gray-200
+                dark:hover:bg-gray-500
+                hover:bg-gray-700
+                text-gray-200
+                dark:text-gray-900
+                dark:hover:text-gray-200
+                rounded-lg
+                transition
+                duration-1000
+              "
+              >Signup</a
+            >
+          </div>
         </div>
       </div>
-    </div>
+    </header>
   </div>
 </template>
 
 <script>
 import { MoonIcon, SunIcon, MenuIcon, XIcon } from "@heroicons/vue/solid";
+import DropdownMenu from "./DropdownMenu.vue";
+import MegaMenu from "./MegaMenu.vue";
 export default {
   setup() {
     return {};
@@ -383,6 +392,8 @@ export default {
     SunIcon,
     MenuIcon,
     XIcon,
+    DropdownMenu,
+    MegaMenu,
   },
   data() {
     return {

@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-200 dark:bg-gray-900">
-    <div class="z-50">
+    <div class="container">
       <nav-bar></nav-bar>
     </div>
     <div class="">

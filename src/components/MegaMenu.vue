@@ -4,10 +4,6 @@
       href="/#features"
       class="text-copy-primary hover:text-gray-600"
       @focus="showMenu"
-      @keydown.shift.tab="hideMenu"
-      @keydown.esc.exact="hideMenu"
-      @keydown.up.exact.prevent="startArrowKeys"
-      @keydown.down.exact.prevent="startArrowKeys"
     >
       Features
     </a>
@@ -36,14 +32,7 @@
         <div class="flex flex-col lg:flex-row px-8 py-6 border-b -mx-4">
           <ul class="w-full lg:w-1/2 px-4">
             <li class="mb-8">
-              <a
-                href="#"
-                class="flex group"
-                @keydown.esc.exact="hideMenu"
-                @keydown.tab.exact="focusNext(false)"
-                @keydown.down.exact.prevent="focusNext(true)"
-                @keydown.up.exact.prevent=""
-              >
+              <a href="#" class="flex group">
                 <svg
                   fill="currentColor"
                   class="text-blue-500 group-hover:text-blue-800"
@@ -95,15 +84,7 @@
               </a>
             </li>
             <li class="mb-8">
-              <a
-                href="#"
-                class="flex group"
-                @keydown.esc.exact="hideMenu"
-                @keydown.tab.exact="focusNext(false)"
-                @keydown.shift.tab="focusPrevious(false)"
-                @keydown.up.exact.prevent="focusPrevious(true)"
-                @keydown.down.exact.prevent="focusNext(true)"
-              >
+              <a href="#" class="flex group">
                 <svg
                   fill="currentColor"
                   class="text-blue-500 group-hover:text-blue-800"
@@ -138,15 +119,7 @@
               </a>
             </li>
             <li class="mb-8 lg:mb-0">
-              <a
-                href="#"
-                class="flex group"
-                @keydown.esc.exact="hideMenu"
-                @keydown.tab.exact="focusNext(false)"
-                @keydown.shift.tab="focusPrevious(false)"
-                @keydown.up.exact.prevent="focusPrevious(true)"
-                @keydown.down.exact.prevent="focusNext(true)"
-              >
+              <a href="#" class="flex group">
                 <svg
                   fill="currentColor"
                   class="text-blue-500 group-hover:text-blue-800"
@@ -183,15 +156,7 @@
           </ul>
           <ul class="w-full lg:w-1/2 px-4">
             <li class="mb-8">
-              <a
-                href="#"
-                class="flex group"
-                @keydown.esc.exact="hideMenu"
-                @keydown.tab.exact="focusNext(false)"
-                @keydown.shift.tab="focusPrevious(false)"
-                @keydown.up.exact.prevent="focusPrevious(true)"
-                @keydown.down.exact.prevent="focusNext(true)"
-              >
+              <a href="#" class="flex group">
                 <svg
                   fill="currentColor"
                   class="text-blue-500 group-hover:text-blue-800"
@@ -226,15 +191,7 @@
               </a>
             </li>
             <li class="mb-8">
-              <a
-                href="#"
-                class="flex group"
-                @keydown.esc.exact="hideMenu"
-                @keydown.tab.exact="focusNext(false)"
-                @keydown.shift.tab="focusPrevious(false)"
-                @keydown.up.exact.prevent="focusPrevious(true)"
-                @keydown.down.exact.prevent="focusNext(true)"
-              >
+              <a href="#" class="flex group">
                 <svg
                   fill="currentColor"
                   class="text-blue-500 group-hover:text-blue-800"
@@ -269,15 +226,7 @@
               </a>
             </li>
             <li class="">
-              <a
-                href="#"
-                class="flex group"
-                @keydown.esc.exact="hideMenu"
-                @keydown.tab.exact="focusNext(false)"
-                @keydown.shift.tab="focusPrevious(false)"
-                @keydown.up.exact.prevent="focusPrevious(true)"
-                @keydown.down.exact.prevent="focusNext(true)"
-              >
+              <a href="#" class="flex group">
                 <svg
                   fill="currentColor"
                   class="text-blue-500 group-hover:text-blue-800"
@@ -315,15 +264,7 @@
         </div>
         <ul class="bg-gray-100 px-8 py-8">
           <li class="mb-6">
-            <a
-              href="#"
-              class="flex lg:items-center group"
-              @keydown.esc.exact="hideMenu"
-              @keydown.tab.exact="focusNext(false)"
-              @keydown.shift.tab="focusPrevious(false)"
-              @keydown.up.exact.prevent="focusPrevious(true)"
-              @keydown.down.exact.prevent="focusNext(true)"
-            >
+            <a href="#" class="flex lg:items-center group">
               <svg
                 fill="currentColor"
                 class="text-blue-500 group-hover:text-blue-800"
@@ -362,15 +303,7 @@
             </a>
           </li>
           <li class="mb-6">
-            <a
-              href="#"
-              class="flex lg:items-center group"
-              @keydown.esc.exact="hideMenu"
-              @keydown.tab.exact="focusNext(false)"
-              @keydown.shift.tab="focusPrevious(false)"
-              @keydown.up.exact.prevent="focusPrevious(true)"
-              @keydown.down.exact.prevent="focusNext(true)"
-            >
+            <a href="#" class="flex lg:items-center group">
               <svg
                 fill="currentColor"
                 class="text-blue-500 group-hover:text-blue-800"
@@ -407,15 +340,7 @@
             </a>
           </li>
           <li>
-            <a
-              href="#"
-              class="flex lg:items-center group"
-              @keydown.esc.exact="hideMenu"
-              @keydown.tab.exact="hideMenu"
-              @keydown.shift.tab="focusPrevious(false)"
-              @keydown.up.exact.prevent="focusPrevious(true)"
-              @keydown.down.exact.prevent=""
-            >
+            <a href="#" class="flex lg:items-center group">
               <svg
                 fill="currentColor"
                 class="text-blue-500 group-hover:text-blue-800"
@@ -461,14 +386,10 @@
 
 <script>
 export default {
-  mounted() {
-    this.menuItems = document.querySelectorAll(".mega-menu a");
-  },
+  mounted() {},
   data() {
     return {
       isVisible: false,
-      menuItems: null,
-      focusedIndex: 0,
     };
   },
   methods: {
@@ -478,26 +399,6 @@ export default {
     hideMenu() {
       this.isVisible = false;
       this.focusedIndex = 0;
-    },
-    startArrowKeys() {
-      this.menuItems[0].focus();
-    },
-    focusPrevious(isArrowKey) {
-      this.focusedIndex = this.focusedIndex - 1;
-
-      if (isArrowKey) {
-        this.focusItem();
-      }
-    },
-    focusNext(isArrowKey) {
-      this.focusedIndex = this.focusedIndex + 1;
-
-      if (isArrowKey) {
-        this.focusItem();
-      }
-    },
-    focusItem() {
-      this.menuItems[this.focusedIndex].focus();
     },
   },
 };

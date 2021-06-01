@@ -1,13 +1,6 @@
 <template>
   <div class="relative" @mouseover="showMenu" @mouseleave="hideMenu">
-    <button
-      class="flex items-center outline-none"
-      @focus="showMenu"
-      @keydown.shift.tab="hideMenu"
-      @keydown.esc.exact="hideMenu"
-      @keydown.up.exact.prevent="startArrowKeys"
-      @keydown.down.exact.prevent="startArrowKeys"
-    >
+    <button class="flex items-center outline-none" @focus="showMenu">
       Dropdown
       <svg
         fill="currentColor"
@@ -43,14 +36,7 @@
         "
       >
         <div>
-          <a
-            href="#"
-            class="flex items-center px-3 py-3 hover:bg-gray-200"
-            @keydown.esc.exact="hideMenu"
-            @keydown.tab.exact="focusNext(false)"
-            @keydown.down.exact.prevent="focusNext(true)"
-            @keydown.up.exact.prevent=""
-          >
+          <a href="#" class="flex items-center px-3 py-3 hover:bg-gray-200">
             <svg
               fill="currentColor"
               class="text-gray-600"
@@ -68,14 +54,7 @@
           </a>
         </div>
         <div>
-          <a
-            href="#"
-            class="flex items-center px-3 py-3 hover:bg-gray-200"
-            @keydown.esc.exact="hideMenu"
-            @keydown.tab.exact="focusNext(false)"
-            @keydown.down.exact.prevent="focusNext(true)"
-            @keydown.up.exact.prevent=""
-          >
+          <a href="#" class="flex items-center px-3 py-3 hover:bg-gray-200">
             <svg
               fill="currentColor"
               class="text-gray-600"
@@ -93,14 +72,7 @@
           </a>
         </div>
         <div>
-          <a
-            href="#"
-            class="flex items-center px-3 py-3 hover:bg-gray-200"
-            @keydown.esc.exact="hideMenu"
-            @keydown.tab.exact="focusNext(false)"
-            @keydown.down.exact.prevent="focusNext(true)"
-            @keydown.up.exact.prevent=""
-          >
+          <a href="#" class="flex items-center px-3 py-3 hover:bg-gray-200">
             <svg
               fill="currentColor"
               class="text-gray-600"
@@ -118,14 +90,7 @@
           </a>
         </div>
         <div>
-          <a
-            href="#"
-            class="flex items-center px-3 py-3 hover:bg-gray-200"
-            @keydown.esc.exact="hideMenu"
-            @keydown.tab.exact="focusNext(false)"
-            @keydown.down.exact.prevent="focusNext(true)"
-            @keydown.up.exact.prevent=""
-          >
+          <a href="#" class="flex items-center px-3 py-3 hover:bg-gray-200">
             <svg
               fill="currentColor"
               class="text-gray-600"
@@ -155,8 +120,6 @@ export default {
   data() {
     return {
       isVisible: false,
-      menuItems: null,
-      focusedIndex: 0,
     };
   },
   methods: {
@@ -165,27 +128,6 @@ export default {
     },
     hideMenu() {
       this.isVisible = false;
-      this.focusedIndex = 0;
-    },
-    startArrowKeys() {
-      this.menuItems[0].focus();
-    },
-    focusPrevious(isArrowKey) {
-      this.focusedIndex = this.focusedIndex - 1;
-
-      if (isArrowKey) {
-        this.focusItem();
-      }
-    },
-    focusNext(isArrowKey) {
-      this.focusedIndex = this.focusedIndex + 1;
-
-      if (isArrowKey) {
-        this.focusItem();
-      }
-    },
-    focusItem() {
-      this.menuItems[this.focusedIndex].focus();
     },
   },
 };

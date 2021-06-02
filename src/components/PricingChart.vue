@@ -510,7 +510,6 @@
         items-center
         space-y-10
         lg:space-x-4
-        bg-gray-200
       "
     >
       <div
@@ -519,6 +518,7 @@
           rounded-3xl
           lg:w-1/3
           h-full
+          shadow-lg
           transform
           hover:-translate-y-8
           transition
@@ -672,6 +672,7 @@
           rounded-3xl
           lg:w-1/3
           h-full
+          shadow-lg
           transform
           hover:-translate-y-8
           transition
@@ -856,6 +857,7 @@
           rounded-3xl
           lg:w-1/3
           h-full
+          shadow-lg
           transform
           hover:-translate-y-8
           transition

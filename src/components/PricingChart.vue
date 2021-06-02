@@ -499,115 +499,507 @@
         </tr>
       </tbody>
     </table>
-
-    <div class="mobile-table mx-4 md:mx-32 mt-16 md:hidden">
+    <div
+      class="
+        md:hidden
+        mt-10
+        py-5
+        flex
+        lg:flex-row
+        flex-col
+        items-center
+        space-y-10
+        lg:space-x-4
+        bg-gray-200
+      "
+    >
       <div
         class="
-          flex flex-col
-          justify-center
-          text-center
-          border border-gray-400
-          text-base
+          bg-white
+          rounded-3xl
+          lg:w-1/3
+          h-full
+          transform
+          hover:-translate-y-8
+          transition
+          duration-700
         "
       >
-        <div class="bg-gray-300 px-4 py-4">
-          <div class="uppercase tracking-wide font-bold text-gray-700">
-            Hobby
-          </div>
-          <div class="mt-3">
-            <span class="text-lg">$</span>
-            <span class="font-bold text-4xl ml-1"> $19 </span>
-            <span class="ml-2 text-sm">/ month</span>
-          </div>
-        </div>
-        <div class="odd:bg-gray-200 even:bg-white flex px-3 py-4">
-          <div class="text-left w-3/5">Shipping Discount</div>
-          <div class="w-2/5">3</div>
-        </div>
-        <div class="odd:bg-gray-200 even:bg-white flex px-3 py-4">
-          <div class="text-left w-3/5">Shipping Discount</div>
-          <div class="w-2/5">3</div>
-        </div>
-        <div class="odd:bg-gray-200 even:bg-white flex px-3 py-4">
-          <div class="text-left w-3/5">Shipping Discount</div>
-          <div class="w-2/5">3</div>
-        </div>
-        <div class="odd:bg-gray-200 even:bg-white flex px-3 py-4">
-          <div class="text-left w-3/5">Shipping Discount</div>
-          <div class="w-2/5">3</div>
-        </div>
-        <div class="odd:bg-gray-200 even:bg-white px-3 py-4">
-          <ul class="leading-loose">
-            <li class="flex items-center">
-              <svg
-                fill="currentColor"
-                width="18"
-                height="18"
-                viewBox="0 0 18 18"
-              >
-                <path
-                  d="M6.61 11.89L3.5 8.78 2.44 9.84 6.61 14l8.95-8.95L14.5 4l-7.89 7.89z"
-                />
-              </svg>
-              <span class="ml-2">Free Custom Domain</span>
-            </li>
-            <li class="flex items-center">
-              <svg
-                fill="currentColor"
-                width="18"
-                height="18"
-                viewBox="0 0 18 18"
-              >
-                <path
-                  d="M6.61 11.89L3.5 8.78 2.44 9.84 6.61 14l8.95-8.95L14.5 4l-7.89 7.89z"
-                />
-              </svg>
-              <span class="ml-2">SSL Security</span>
-            </li>
-            <li class="flex items-center">
-              <svg
-                fill="currentColor"
-                width="18"
-                height="18"
-                viewBox="0 0 18 18"
-              >
-                <path
-                  d="M6.61 11.89L3.5 8.78 2.44 9.84 6.61 14l8.95-8.95L14.5 4l-7.89 7.89z"
-                />
-              </svg>
-              <span class="ml-2">Unlimited Bandwidth</span>
-            </li>
-            <li class="flex items-center">
-              <svg
-                fill="currentColor"
-                width="18"
-                height="18"
-                viewBox="0 0 18 18"
-              >
-                <path
-                  d="M6.61 11.89L3.5 8.78 2.44 9.84 6.61 14l8.95-8.95L14.5 4l-7.89 7.89z"
-                />
-              </svg>
-              <span class="ml-2">SEO Features</span>
-            </li>
-          </ul>
-        </div>
-        <div class="odd:bg-gray-200 even:bg-white px-3 py-4">
-          <div class="flex justify-center">
-            <a
-              href="#"
-              class="
-                bg-blue-500
-                hover:bg-blue-700
-                text-white
-                inline-block
-                rounded
-                w-64
-                px-4
-                py-3
-              "
-              >Sign Up</a
+        <div class="py-5 px-8 flex flex-col flex-wrap space-y-5">
+          <div class="mt-8 block">
+            <h1
+              class="font-pattaya text-4xl font-bold text-center tracking-wider"
             >
+              Basic
+            </h1>
+          </div>
+          <div class="block">
+            <p
+              class="
+                text-center text-8xl
+                font-bold font-nunito
+                tracking-tighter
+                text-gray-700
+                flex
+                justify-center
+              "
+            >
+              0
+              <span
+                class="
+                  text-2xl
+                  items-baseline
+                  text-blue-500
+                  font-bold font-nunito
+                "
+              >
+                $
+              </span>
+            </p>
+          </div>
+          <button
+            class="
+              bg-blue-900
+              hover:bg-blue-500
+              py-3
+              px-20
+              rounded-xl
+              text-gray-100
+              font-bold font-pattaya
+              tracking-wider
+              text-xl
+              transition
+              duration-700
+            "
+          >
+            See More
+          </button>
+          <div class="">
+            <div class="flex space-x-3 py-2">
+              <div
+                class="
+                  relative
+                  rounded-full
+                  bg-blue-300
+                  h-5
+                  w-5
+                  flex
+                  items-center
+                "
+              >
+                <CheckIcon class="absolute h-7 w-7 text-blue-900"></CheckIcon>
+              </div>
+              <span class="text-gray-600 tracking-wide"
+                >Strategy & Research</span
+              >
+            </div>
+            <div class="flex space-x-3 py-2">
+              <div
+                class="
+                  relative
+                  rounded-full
+                  bg-blue-300
+                  h-5
+                  w-5
+                  flex
+                  items-center
+                "
+              >
+                <CheckIcon class="absolute h-7 w-7 text-blue-900"></CheckIcon>
+              </div>
+              <span class="text-gray-600 tracking-wide"
+                >Business & Finance Analysing</span
+              >
+            </div>
+            <div class="flex space-x-3 py-2">
+              <div
+                class="
+                  relative
+                  rounded-full
+                  bg-blue-300
+                  h-5
+                  w-5
+                  flex
+                  items-center
+                "
+              >
+                <CheckIcon class="absolute h-7 w-7 text-blue-900"></CheckIcon>
+              </div>
+              <span class="text-gray-600 tracking-wide"
+                >user interface design</span
+              >
+            </div>
+            <div class="flex space-x-3 py-2">
+              <div
+                class="
+                  relative
+                  rounded-full
+                  bg-blue-300
+                  h-5
+                  w-5
+                  flex
+                  items-center
+                "
+              >
+                <CheckIcon class="absolute h-7 w-7 text-blue-900"></CheckIcon>
+              </div>
+              <span class="text-gray-600 tracking-wide"
+                >facebook ads marketing</span
+              >
+            </div>
+            <div class="flex space-x-3 py-2">
+              <div
+                class="
+                  relative
+                  rounded-full
+                  bg-blue-300
+                  h-5
+                  w-5
+                  flex
+                  items-center
+                "
+              >
+                <CheckIcon class="absolute h-7 w-7 text-blue-900"></CheckIcon>
+              </div>
+              <span class="text-gray-600 tracking-wide">free traffic</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="
+          bg-white
+          rounded-3xl
+          lg:w-1/3
+          h-full
+          transform
+          hover:-translate-y-8
+          transition
+          duration-700
+        "
+      >
+        <div class="py-10 px-8 flex flex-col flex-wrap space-y-5">
+          <div class="mt-8 block">
+            <h1
+              class="font-pattaya text-4xl font-bold text-center tracking-wider"
+            >
+              Premium
+            </h1>
+          </div>
+          <div class="block">
+            <p
+              class="
+                text-center text-8xl
+                font-bold font-nunito
+                tracking-tighter
+                text-gray-700
+                flex
+                justify-center
+              "
+            >
+              89
+              <span
+                class="
+                  text-2xl
+                  items-baseline
+                  text-blue-500
+                  font-bold font-nunito
+                "
+              >
+                $
+              </span>
+            </p>
+          </div>
+          <button
+            class="
+              bg-blue-500
+              py-3
+              px-10
+              rounded-xl
+              text-gray-100
+              font-bold font-pattaya
+              tracking-wider
+              text-lg
+            "
+          >
+            Get free Trail!
+          </button>
+          <div class="">
+            <div class="flex space-x-3 py-2">
+              <div
+                class="
+                  relative
+                  rounded-full
+                  bg-blue-300
+                  h-5
+                  w-5
+                  flex
+                  items-center
+                "
+              >
+                <CheckIcon class="absolute h-7 w-7 text-blue-900"></CheckIcon>
+              </div>
+              <span class="text-gray-600 tracking-wide"
+                >Strategy & Research</span
+              >
+            </div>
+            <div class="flex space-x-3 py-2">
+              <div
+                class="
+                  relative
+                  rounded-full
+                  bg-blue-300
+                  h-5
+                  w-5
+                  flex
+                  items-center
+                "
+              >
+                <CheckIcon class="absolute h-7 w-7 text-blue-900"></CheckIcon>
+              </div>
+              <span class="text-gray-600 tracking-wide"
+                >Business & Finance Analysing</span
+              >
+            </div>
+            <div class="flex space-x-3 py-2">
+              <div
+                class="
+                  relative
+                  rounded-full
+                  bg-blue-300
+                  h-5
+                  w-5
+                  flex
+                  items-center
+                "
+              >
+                <CheckIcon class="absolute h-7 w-7 text-blue-900"></CheckIcon>
+              </div>
+              <span class="text-gray-600 tracking-wide"
+                >user interface design</span
+              >
+            </div>
+            <div class="flex space-x-3 py-2">
+              <div
+                class="
+                  relative
+                  rounded-full
+                  bg-blue-300
+                  h-5
+                  w-5
+                  flex
+                  items-center
+                "
+              >
+                <CheckIcon class="absolute h-7 w-7 text-blue-900"></CheckIcon>
+              </div>
+              <span class="text-gray-600 tracking-wide"
+                >facebook ads marketing</span
+              >
+            </div>
+            <div class="flex space-x-3 py-2">
+              <div
+                class="
+                  relative
+                  rounded-full
+                  bg-blue-300
+                  h-5
+                  w-5
+                  flex
+                  items-center
+                "
+              >
+                <CheckIcon class="absolute h-7 w-7 text-blue-900"></CheckIcon>
+              </div>
+              <span class="text-gray-600 tracking-wide">SEO Optimization</span>
+            </div>
+            <div class="flex space-x-3 py-2">
+              <div
+                class="
+                  relative
+                  rounded-full
+                  bg-blue-300
+                  h-5
+                  w-5
+                  flex
+                  items-center
+                "
+              >
+                <CheckIcon class="absolute h-7 w-7 text-blue-900"></CheckIcon>
+              </div>
+              <span class="text-gray-600 tracking-wide"
+                >Business & Finance Analysing</span
+              >
+            </div>
+            <div class="flex space-x-3 py-2">
+              <div
+                class="
+                  relative
+                  rounded-full
+                  bg-blue-300
+                  h-5
+                  w-5
+                  flex
+                  items-center
+                "
+              >
+                <CheckIcon class="absolute h-7 w-7 text-blue-900"></CheckIcon>
+              </div>
+              <span class="text-gray-600 tracking-wide">Website Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="
+          bg-white
+          rounded-3xl
+          lg:w-1/3
+          h-full
+          transform
+          hover:-translate-y-8
+          transition
+          duration-700
+        "
+      >
+        <div class="py-5 px-8 flex flex-col flex-wrap space-y-5">
+          <div class="mt-8 block">
+            <h1
+              class="font-pattaya text-4xl font-bold text-center tracking-wider"
+            >
+              Business
+            </h1>
+          </div>
+          <div class="block">
+            <p
+              class="
+                text-center text-8xl
+                font-bold font-nunito
+                tracking-tighter
+                text-gray-700
+                flex
+                justify-center
+              "
+            >
+              799
+              <span
+                class="
+                  text-2xl
+                  items-baseline
+                  text-blue-500
+                  font-bold font-nunito
+                "
+              >
+                $
+              </span>
+            </p>
+          </div>
+          <button
+            class="
+              bg-blue-900
+              hover:bg-blue-500
+              py-3
+              px-10
+              rounded-xl
+              text-gray-100
+              font-bold font-pattaya
+              tracking-wider
+              text-lg
+              transition
+              duration-700
+            "
+          >
+            Get free Trial!
+          </button>
+          <div class="">
+            <div class="flex space-x-3 py-2">
+              <div
+                class="
+                  relative
+                  rounded-full
+                  bg-blue-300
+                  h-5
+                  w-5
+                  flex
+                  items-center
+                "
+              >
+                <CheckIcon class="absolute h-7 w-7 text-blue-900"></CheckIcon>
+              </div>
+              <span class="text-gray-600 tracking-wide">free traffic</span>
+            </div>
+            <div class="flex space-x-3 py-2">
+              <div
+                class="
+                  relative
+                  rounded-full
+                  bg-blue-300
+                  h-5
+                  w-5
+                  flex
+                  items-center
+                "
+              >
+                <CheckIcon class="absolute h-7 w-7 text-blue-900"></CheckIcon>
+              </div>
+              <span class="text-gray-600 tracking-wide"
+                >Strategy & Research</span
+              >
+            </div>
+            <div class="flex space-x-3 py-2">
+              <div
+                class="
+                  relative
+                  rounded-full
+                  bg-blue-300
+                  h-5
+                  w-5
+                  flex
+                  items-center
+                "
+              >
+                <CheckIcon class="absolute h-7 w-7 text-blue-900"></CheckIcon>
+              </div>
+              <span class="text-gray-600 tracking-wide"
+                >Business & Finance Analysing</span
+              >
+            </div>
+            <div class="flex space-x-3 py-2">
+              <div
+                class="
+                  relative
+                  rounded-full
+                  bg-blue-300
+                  h-5
+                  w-5
+                  flex
+                  items-center
+                "
+              >
+                <CheckIcon class="absolute h-7 w-7 text-blue-900"></CheckIcon>
+              </div>
+              <span class="text-gray-600 tracking-wide"
+                >user interface design</span
+              >
+            </div>
+            <div class="flex space-x-3 py-2">
+              <div
+                class="
+                  relative
+                  rounded-full
+                  bg-blue-300
+                  h-5
+                  w-5
+                  flex
+                  items-center
+                "
+              >
+                <CheckIcon class="absolute h-7 w-7 text-blue-900"></CheckIcon>
+              </div>
+              <span class="text-gray-600 tracking-wide"
+                >facebook ads marketing</span
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -616,13 +1008,14 @@
 </template>
 
 <script>
-import { CheckCircleIcon } from "@heroicons/vue/solid";
+import { CheckCircleIcon, CheckIcon } from "@heroicons/vue/solid";
 export default {
   setup() {
     return {};
   },
   components: {
     CheckCircleIcon,
+    CheckIcon,
   },
 };
 </script>
